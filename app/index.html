@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arun Balaji M | Software Developer</title>
+<meta name="description" content="Computer Science student building AI-assisted software and automation. Open to software development internships.">
+<meta property="og:title" content="Arun Balaji M | Software Developer">
+<meta property="og:description" content="Building practical AI-powered applications and scalable software solutions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0d1420;--panel:#131c2c;--text:#ece9e0;--muted:#97a1b2;--rule:#243049;--acc:#c9ab6b;--serif:"Newsreader",Georgia,serif;--sans:"Hanken Grotesk",system-ui,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:400 1rem/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+main{max-width:1180px;margin:0 auto;padding:0 clamp(1.25rem,4vw,2.5rem)}
+.muted{color:var(--muted)}.acc{color:var(--acc)}
+.nav{position:fixed;inset:0 0 auto 0;z-index:20;display:flex;justify-content:space-between;align-items:center;padding:1rem clamp(1.25rem,4vw,2.5rem);background:linear-gradient(var(--bg),transparent);backdrop-filter:blur(6px)}
+.logo{font:400 1.2rem var(--serif)}
+.nav nav{display:flex;gap:1.5rem;align-items:center;font-size:.95rem;color:var(--muted)}
+.nav nav a:hover{color:var(--text)}
+.btn{display:inline-block;padding:.85rem 1.6rem;border:1px solid var(--acc);background:var(--acc);color:#0d1420;border-radius:999px;font:500 1rem var(--sans);cursor:pointer;transition:transform .2s,background .2s,color .2s}
+.btn:hover{transform:translateY(-2px);background:transparent;color:var(--acc)}
+.btn.ghost{background:transparent;color:var(--acc)}.btn.ghost:hover{background:var(--acc);color:#0d1420}
+.btn.small{padding:.45rem 1.1rem;font-size:.88rem}.nav .btn.small{color:#0d1420}.nav .btn.small:hover{color:var(--acc)}
+.row{display:flex;flex-wrap:wrap;gap:1rem;margin-top:2rem}
+.glow{position:relative;overflow:hidden;--mx:50%;--my:30%}
+.glow::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(520px circle at var(--mx) var(--my),rgba(201,171,107,.13),transparent 60%)}
+.hero{min-height:92vh;display:flex;flex-direction:column;justify-content:center;padding:7rem clamp(1.25rem,4vw,2.5rem) 4rem;max-width:1180px;margin:0 auto}
+.hero-grid{display:grid;grid-template-columns:1.25fr 0.85fr;align-items:center;gap:clamp(2rem,5vw,4.5rem);width:100%}
+.hero-content{display:flex;flex-direction:column}
+.kicker{color:var(--muted);margin:0 0 1.5rem}
+.hero h1{margin:0;font:300 clamp(2.4rem,5.2vw,4.8rem)/1.05 var(--serif);letter-spacing:-.03em;max-width:18ch}
+.hero-avatar-wrap{display:flex;justify-content:center;align-items:center;position:relative}
+.hero-avatar-card{position:relative;width:min(320px,100%);display:flex;flex-direction:column;align-items:center}
+.hero-avatar-glow{position:absolute;inset:-16px;background:radial-gradient(circle at 50% 35%,rgba(201,171,107,.32),rgba(13,20,32,0) 72%);border-radius:32px;filter:blur(20px);pointer-events:none;z-index:0}
+.hero-avatar-inner{position:relative;z-index:1;width:100%;aspect-ratio:3.4/4.2;border-radius:24px;overflow:hidden;border:1px solid rgba(201,171,107,.35);background:var(--panel);box-shadow:0 24px 50px -15px rgba(0,0,0,.7),0 0 0 1px rgba(255,255,255,.05);transition:transform .4s cubic-bezier(.2,.7,.2,1),border-color .4s,box-shadow .4s}
+.hero-avatar-inner:hover{transform:translateY(-6px) scale(1.015);border-color:var(--acc);box-shadow:0 30px 60px -15px rgba(201,171,107,.25),0 0 0 1px var(--acc)}
+.hero-avatar-img{width:100%;height:100%;object-fit:cover;object-position:center 15%;display:block;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.hero-avatar-inner:hover .hero-avatar-img{transform:scale(1.04)}
+.hero-status-pill{position:absolute;bottom:-14px;z-index:2;display:inline-flex;align-items:center;gap:.55rem;padding:.5rem 1.15rem;border-radius:999px;background:rgba(19,28,44,.94);backdrop-filter:blur(12px);border:1px solid rgba(201,171,107,.45);box-shadow:0 10px 25px -5px rgba(0,0,0,.5);font-size:.82rem;font-weight:500;color:var(--text);white-space:nowrap}
+.hero-status-dot{width:8px;height:8px;border-radius:50%;background:#34d399;box-shadow:0 0 0 0 rgba(52,211,153,.7);animation:pulseDot 2s infinite cubic-bezier(.4,0,.6,1)}
+@keyframes pulseDot{0%{box-shadow:0 0 0 0 rgba(52,211,153,.7)}70%{box-shadow:0 0 0 8px rgba(52,211,153,0)}100%{box-shadow:0 0 0 0 rgba(52,211,153,0)}}
+.w{display:inline-block;opacity:0;transform:translateY(40px);animation:up .8s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes up{to{opacity:1;transform:none}}
+.typed{font-size:clamp(1.1rem,2.2vw,1.5rem);color:var(--muted);margin:2rem 0 0;min-height:2em}
+.typed b{color:var(--acc);font-weight:500}
+.caret{display:inline-block;width:2px;height:1.1em;background:var(--acc);margin-left:3px;vertical-align:text-bottom;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.skills{border-block:1px solid var(--rule);padding:2rem 0;display:grid;gap:1.1rem}
+.mrow{display:grid;grid-template-columns:150px 1fr;align-items:center;gap:1rem;padding-left:clamp(1.25rem,4vw,2.5rem)}
+.mlabel{color:var(--muted);font-size:.85rem}
+.mwin{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.track{display:flex;gap:.7rem;width:max-content;animation:scroll 45s linear infinite}
+.track.rev{animation-direction:reverse}.mwin:hover .track{animation-play-state:paused}
+@keyframes scroll{to{transform:translateX(-50%)}}
+.chip{padding:.45rem 1.1rem;border:1px solid var(--rule);border-radius:999px;background:var(--panel);white-space:nowrap;font-size:.92rem;transition:border-color .2s,color .2s}
+.chip:hover{border-color:var(--acc);color:var(--acc)}
+.sec{padding:6rem 0 1rem}.nopad{padding-bottom:0}
+h2{font:400 clamp(1.8rem,3.6vw,2.6rem)/1.15 var(--serif);margin:0 0 1.75rem;letter-spacing:-.015em}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,5rem)}
+.prose p{margin:0 0 1.1rem;color:var(--muted);max-width:34rem}.prose p:first-child{color:var(--text);font-size:1.15rem}
+.role{padding:1.3rem 0;border-top:1px solid var(--rule)}.role:first-child{border-top:0;padding-top:0}
+.role time{font-size:.85rem;color:var(--muted)}.role h3{margin:.2rem 0;font:500 1.1rem var(--sans)}.role p{margin:0}
+.cards{display:grid;gap:1.25rem;grid-template-columns:1fr 1fr}
+.card{display:grid;align-content:start;gap:.8rem;padding:2rem;border:1px solid var(--rule);border-radius:18px;background:var(--panel);transition:border-color .25s,transform .25s}
+.card:hover{border-color:var(--acc);transform:translateY(-4px)}
+.card>*{position:relative}.card h3{margin:0;font:300 clamp(1.6rem,2.6vw,2.1rem)/1.15 var(--serif)}.card h3 button{all:unset;cursor:pointer}.card h3 button:hover{color:var(--acc)}.card p{margin:0}
+.thumb{display:grid;place-items:center;aspect-ratio:16/8;overflow:hidden;border:1px solid var(--rule);border-radius:12px;background:var(--bg);color:var(--muted);font-size:.85rem;cursor:pointer}
+.thumb img{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .5s}.card:hover .thumb img{transform:scale(1.03)}
+.tags{display:flex;flex-wrap:wrap;gap:.5rem}.tags span{font-size:.82rem;padding:.25rem .7rem;border:1px solid var(--rule);border-radius:999px;color:var(--muted)}
+.prose .tags{margin-top:1.5rem}
+.acts{display:flex;flex-wrap:wrap;align-items:center;gap:.75rem;margin-top:.4rem}
+.more{all:unset;cursor:pointer;color:var(--acc);font-size:.92rem;margin-right:auto}.more:hover{text-decoration:underline}
+.off{opacity:.4;pointer-events:none}
+.list{margin:0 0 1.5rem;padding-left:1.1rem;color:var(--muted)}.list li{margin-bottom:.7rem}
+.contact{padding-bottom:6rem}.contact h2{font-size:clamp(2.2rem,6vw,4.6rem);max-width:14ch;letter-spacing:-.025em}
+.contact .prose a:hover{text-decoration:underline}
+.form{display:grid;gap:1rem}.form label{display:grid;gap:.4rem;font-size:.88rem;color:var(--muted)}
+.form input,.form textarea{font:inherit;color:var(--text);background:var(--panel);border:1px solid var(--rule);border-radius:12px;padding:.8rem 1rem;transition:border-color .2s}
+.form input:focus,.form textarea:focus{outline:0;border-color:var(--acc)}.form button{justify-self:start}
+.foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;max-width:1180px;margin:0 auto;padding:2rem clamp(1.25rem,4vw,2.5rem);border-top:1px solid var(--rule);color:var(--muted);font-size:.88rem}
+.foot a{margin-left:1rem}.foot a:hover{color:var(--acc)}
+dialog{width:min(1000px,94vw);max-height:92vh;padding:clamp(1.25rem,4vw,3rem);border:1px solid var(--rule);border-radius:20px;background:var(--bg);color:var(--text)}
+dialog::backdrop{background:rgba(5,8,14,.75);backdrop-filter:blur(4px)}
+dialog h1{font:300 clamp(2rem,5vw,3.6rem)/1.05 var(--serif);letter-spacing:-.02em;margin:1rem 0 .5rem}
+dialog h2{font-size:1.5rem;margin-bottom:1rem}.cols>div>*+h2{margin-top:2rem}
+.lead{font-size:1.15rem;color:var(--muted);margin:0 0 2rem}
+.x{all:unset;cursor:pointer;color:var(--muted);font-size:.92rem}.x:hover{color:var(--acc)}
+.toggle{display:inline-flex;border:1px solid var(--rule);border-radius:999px;padding:4px;margin-bottom:1.25rem}
+.toggle button{border:0;background:none;color:var(--muted);padding:.45rem 1.2rem;border-radius:999px;font:inherit;cursor:pointer;transition:background .2s,color .2s}
+.toggle button.on{background:var(--acc);color:#0d1420}
+.frame{margin:0 auto 2.5rem;border:1px solid var(--rule);background:var(--panel);overflow:hidden;transition:max-width .5s cubic-bezier(.2,.7,.2,1),border-radius .5s}
+.frame.desktop{max-width:100%;border-radius:14px}.frame.mobile{max-width:280px;border-radius:36px}
+.bar{display:flex;gap:6px;padding:.7rem 1rem;border-bottom:1px solid var(--rule)}.bar i{width:9px;height:9px;border-radius:50%;background:var(--rule)}
+.frame.mobile .bar{justify-content:center;padding:.9rem}.frame.mobile .bar i:not(:first-child){display:none}.frame.mobile .bar i{width:60px;height:6px;border-radius:6px}
+.screen{aspect-ratio:16/10;display:grid}.frame.mobile .screen{aspect-ratio:9/17}
+.screen img{width:100%;height:100%;object-fit:cover;object-position:top}
+.ph{display:grid;place-content:center;text-align:center;color:var(--muted);font-size:.9rem;padding:1rem;line-height:1.8}.ph code{color:var(--acc);font-size:.8rem}
+@media (max-width:820px){.hero-grid{grid-template-columns:1fr;gap:2.75rem}.hero-avatar-wrap{order:-1;justify-content:flex-start}.hero-avatar-card{width:min(240px,70vw)}.cols,.cards{grid-template-columns:1fr}.mrow{grid-template-columns:1fr;gap:.4rem}.nav nav a:not(.btn){display:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.w{animation:none;opacity:1;transform:none}.track,.caret{animation:none}*{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="nav">
+  <a href="#top" class="logo">Arun Balaji M</a>
+  <nav>
+    <a href="#about">About</a><a href="#skills">Skills</a><a href="#work">Projects</a><a href="#contact">Contact</a>
+    <a href="resume.pdf" download class="btn small">Download CV</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero glow" id="hero">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <p class="kicker">Arun Balaji M, Chennai, India</p>
+        <h1 id="h1"></h1>
+        <p class="typed"><b id="typed"></b><i class="caret"></i></p>
+        <div class="row"><a href="#work" class="btn">View Projects</a><a href="#contact" class="btn ghost">Contact Me</a></div>
+      </div>
+      <div class="hero-avatar-wrap">
+        <div class="hero-avatar-card">
+          <div class="hero-avatar-glow" aria-hidden="true"></div>
+          <div class="hero-avatar-inner">
+            <img src="images/profile.png" alt="Arun Balaji M" class="hero-avatar-img">
+          </div>
+          <div class="hero-status-pill">
+            <span class="hero-status-dot"></span>
+            <span>Available for Internships</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="sec">
+    <h2>About</h2>
+    <div class="cols">
+      <div class="prose">
+        <p>I am an engineering student at Velammal Engineering College with an interest in software development, generative AI, backend engineering, and cloud computing. I enjoy building practical applications that solve real-world problems using Python, React, APIs, and AI technologies. I am looking for opportunities to contribute to real products while strengthening my technical skills.</p>
+        <div class="tags" id="aboutSkills"></div>
+      </div>
+      <div id="roles"></div>
+    </div>
+  </section>
+
+  <section id="skills" class="sec nopad"><h2>Skills</h2></section>
+</main>
+<section class="skills" id="marquee" aria-label="Skills"></section>
+
+<main>
+  <section id="work" class="sec"><h2>Projects</h2><div class="cards" id="cards"></div></section>
+
+  <section id="achievements" class="sec">
+    <div class="cols">
+      <div><h2>Certifications</h2><div class="tags" id="certs"></div></div>
+      <div><h2>Achievements</h2><ul class="list" id="ach"></ul></div>
+    </div>
+  </section>
+
+  <section id="contact" class="sec contact">
+    <h2>Let's build something useful.</h2>
+    <div class="cols">
+      <div class="prose">
+        <p>I'm open to opportunities to contribute to real products.</p>
+        <p>Arun Balaji M<br>Chennai, India</p>
+        <p><a class="acc" id="mail"></a><br><a class="acc" id="li">LinkedIn</a>, <a class="acc" id="gh">GitHub</a></p>
+        <div class="row"><a class="btn ghost" href="resume.pdf" download>Download CV</a></div>
+      </div>
+      <form class="form" id="form">
+        <label>Name<input name="name" required autocomplete="name"></label>
+        <label>Email<input name="email" type="email" required autocomplete="email"></label>
+        <label>Message<textarea name="message" rows="5" required></textarea></label>
+        <button class="btn" type="submit">Send message</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <span>&copy; 2026 Arun Balaji M. Software Developer | AI &amp; Backend Development</span>
+  <span id="social"></span>
+</footer>
+
+<dialog id="dlg"></dialog>
+
+<script>
+/* ===== EDIT YOUR DETAILS HERE ===== */
+var P={
+  email:"arunbalaji232@gmail.com",
+  github:"https://github.com/arunbalajiiiii",
+  linkedin:"https://www.linkedin.com/in/arun-balaji-21293b290/",
+  instagram:"", /* add your Instagram URL to show it in the footer */
+  tagline:"Building practical AI-powered applications and scalable software solutions.",
+  roles:["Software Developer","AI & Backend Developer"],
+  aboutSkills:["Python","Java","C","C++","HTML","CSS","JavaScript","React.js","FastAPI","Flask","Django","SQL","PostgreSQL","MySQL","Git","GitHub","REST APIs","Generative AI","Cloud Computing"],
+  experience:[
+    {when:"Jun to Jul 2026",title:"Full Stack Developer Intern",org:"CodeAlpha",text:"Worked on full-stack development with React and Node.js on the app side and a FastAPI backend, with code review from senior mentors."},
+    {when:"Dec 21, 2025 to Jan 6, 2026",title:"Cloud Computing Intern",org:"Altruisty",text:"Gained exposure to cloud services, deployment models, virtualization, storage, compute resources, and cloud workflows."},
+    {when:"Graduating 2027",title:"B.E. Computer Science and Engineering",org:"",text:"Velammal Engineering College, Chennai, India."}
+  ],
+  skills:[
+    ["Languages",["Python","Java","C","C++","TypeScript","JavaScript","SQL","HTML","CSS"]],
+    ["Web and backend",["React.js","AngularJS","Redux","Context API","Node.js","FastAPI","Flask","Django","REST APIs","WordPress"]],
+    ["AI and automation",["Generative AI","Prompt Engineering","RAG","Gemini API","OpenAI API","Claude API","LLM APIs","Playwright"]],
+    ["Data and cloud",["PostgreSQL","MySQL","Supabase","pgvector","Cloud Computing"]],
+    ["Tools and core",["Git","GitHub","Cursor","Object-Oriented Programming","Problem-Solving","Team Leadership"]]
+  ],
+  certs:["Deep Learning (NPTEL)","Natural Language Processing (NPTEL)","Python with Data Science (IBM)","Object-Oriented Programming (Udemy)","Database Management Systems (Udemy)","Machine Learning Foundations (AWS)","Introduction to Cloud (AWS)"],
+  ach:["Participated in a college-level hackathon.","Participated in a CIT college event (Duo Developers).","Won 3rd prize in Math Mania in college.","Participated in the Niral 3.0 Hackathon.","Participated in the AWS AI Ascend Hackathon."],
+  /* live = Live Demo URL (empty dims the button). repo = GitHub repo URL. Screenshots: images/projects/<slug>-desktop.png and -mobile.png */
+  projects:[
+    {slug:"voice-assistant",title:"Multilingual GenAI Voice Assistant for Telecom Customer Care",tagline:"A GenAI voice assistant for telecom customer care.",summary:"A multilingual voice assistant that handles billing queries, plan recommendations, service requests, and technical troubleshooting. Supports English, Hinglish, and Tanglish, with escalation to human agents.",stack:["React.js","Flask","Gemini Live API"],features:["Billing queries","Plan recommendations","Service requests","Technical troubleshooting","English, Hinglish, and Tanglish support","Escalation to human agents"],live:"",repo:"https://github.com/arunbalajiiiii"},
+    {slug:"deprex",title:"Deprex",tagline:"An AI-powered early-support platform.",summary:"An AI-powered early-support platform featuring an AI companion, mood journaling, PHQ-9 screening, and mental health resources.",stack:["React.js","FastAPI","SQLite"],features:["AI companion","Mood journaling","PHQ-9 screening","Mental health resources"],live:"",repo:"https://github.com/arunbalajiiiii"},
+    {slug:"job-prep-tool",title:"AI Job Preparation Tool",tagline:"From job description to a personalised learning path.",summary:"An application that analyzes job descriptions, identifies skill gaps, generates interview questions, and recommends personalized learning paths.",stack:["Python","AI APIs","Full-Stack Development"],features:["Job description analysis","Skill gap identification","Interview question generation","Personalised learning paths"],live:"",repo:"https://github.com/arunbalajiiiii"},
+    {slug:"outreach-bot",title:"AI-Powered LinkedIn Outreach Bot",tagline:"Prospect research and outreach, automated.",summary:"An automation tool that extracts professional profile information and generates personalized LinkedIn outreach messages to support prospect research and lead generation.",stack:["Python","Playwright","AI APIs"],features:["Professional profile information extraction","Personalised outreach message generation","Support for prospect research and lead generation"],live:"",repo:"https://github.com/arunbalajiiiii"},
+    {slug:"projectflow",title:"ProjectFlow: Collaborative Kanban & Project Management",tagline:"A Kanban-style project management application.",summary:"A project management application designed to organize tasks, track progress, and streamline workflows using a Kanban-style interface. It helps users manage projects, prioritize tasks, and monitor progress through different stages of completion.",stack:["HTML","CSS","JavaScript"],features:["Task organization","Kanban boards","Project tracking","Responsive user interface"],live:"",repo:"https://github.com/arunbalajiiiii"},
+    {slug:"swiftmove",title:"SwiftMove: Packers & Movers Website",tagline:"A modern website for a relocation service provider.",summary:"A modern, responsive website for a packers and movers service provider, designed to showcase relocation services and generate customer inquiries. It features home and office relocation, vehicle transportation, packing, storage, and international moving services.",stack:["HTML","CSS","JavaScript"],features:["Responsive design","Service showcase","Moving process timeline","Contact information","Interactive quote request form"],live:"",repo:"https://github.com/arunbalajiiiii"}
+  ]
+};
+/* ===== RENDER ===== */
+var $=function(id){return document.getElementById(id)};
+var tags=function(a){return a.map(function(s){return "<span>"+s+"</span>"}).join("")};
+$("h1").innerHTML=P.tagline.split(" ").map(function(w,i){return '<span class="w" style="animation-delay:'+i*90+'ms">'+w+"&nbsp;</span>"}).join("");
+$("aboutSkills").innerHTML=tags(P.aboutSkills);
+$("roles").innerHTML=P.experience.map(function(e){return '<div class="role"><time>'+e.when+"</time><h3>"+e.title+(e.org?', <span class="acc">'+e.org+"</span>":"")+'</h3><p class="muted">'+e.text+"</p></div>"}).join("");
+$("marquee").innerHTML=P.skills.map(function(g,n){var it=g[1].concat(g[1],g[1],g[1]).map(function(s){return '<span class="chip">'+s+"</span>"}).join("");return '<div class="mrow"><span class="mlabel">'+g[0]+'</span><div class="mwin"><div class="track'+(n%2?" rev":"")+'">'+it+"</div></div></div>"}).join("");
+$("certs").innerHTML=tags(P.certs);
+$("ach").innerHTML=P.ach.map(function(a){return "<li>"+a+"</li>"}).join("");
+$("mail").href="mailto:"+P.email;$("mail").textContent=P.email;$("li").href=P.linkedin;$("gh").href=P.github;
+$("social").innerHTML='<a href="'+P.linkedin+'">LinkedIn</a><a href="'+P.github+'">GitHub</a>'+(P.instagram?'<a href="'+P.instagram+'">Instagram</a>':"");
+var live=function(p){return '<a class="btn ghost small'+(p.live?"":" off")+'" '+(p.live?'href="'+p.live+'"':'aria-disabled="true"')+">Live Demo</a>"};
+$("cards").innerHTML=P.projects.map(function(p,i){
+  return '<article class="card glow"><div class="thumb" data-i="'+i+'"><img src="images/projects/'+p.slug+'-desktop.png" alt="" onerror="this.parentNode.innerHTML=\'Project image\'"></div><h3><button data-i="'+i+'">'+p.title+"</button></h3><p class=\"muted\">"+p.summary+'</p><div class="tags">'+tags(p.stack)+'</div><div class="acts"><button class="more" data-i="'+i+'">Case study</button>'+live(p)+'<a class="btn ghost small" href="'+p.repo+'">GitHub</a></div></article>';
+}).join("");
+/* glow follows cursor */
+document.querySelectorAll(".glow").forEach(function(el){el.addEventListener("mousemove",function(e){var r=el.getBoundingClientRect();el.style.setProperty("--mx",e.clientX-r.left+"px");el.style.setProperty("--my",e.clientY-r.top+"px")})});
+/* typing */
+(function(){var el=$("typed"),i=0,t="",del=false;
+  function tick(){var full=P.roles[i],d=del?35:70;
+    if(!del&&t===full){d=1400;del=true}
+    else if(del&&t===""){d=200;del=false;i=(i+1)%P.roles.length}
+    else{t=del?full.slice(0,t.length-1):full.slice(0,t.length+1)}
+    el.textContent=t;setTimeout(tick,d)}
+  tick()})();
+/* case study dialog */
+var dlg=$("dlg");
+function open_(i){var p=P.projects[i];
+  dlg.innerHTML='<button class="x" id="close">Close</button><h1>'+p.title+'</h1><p class="lead">'+p.tagline+'</p>'+
+  '<div class="toggle"><button class="on" data-m="desktop">Desktop</button><button data-m="mobile">Mobile</button></div>'+
+  '<div class="frame desktop" id="frame"><div class="bar"><i></i><i></i><i></i></div><div class="screen" id="screen"></div></div>'+
+  '<div class="cols"><div><h2>Overview</h2><p class="muted">'+p.summary+'</p><h2>Stack</h2><div class="tags">'+tags(p.stack)+'</div></div>'+
+  '<div><h2>Key features</h2><ul class="list">'+p.features.map(function(f){return "<li>"+f+"</li>"}).join("")+'</ul><div class="row" style="margin-top:0">'+live(p)+'<a class="btn ghost small" href="'+p.repo+'">GitHub</a></div></div></div>';
+  var show=function(m){var f=$("frame");f.className="frame "+m;
+    var src="images/projects/"+p.slug+"-"+m+".png";
+    $("screen").innerHTML='<img src="'+src+'" alt="'+p.title+" "+m+' screenshot">';
+    $("screen").firstChild.onerror=function(){$("screen").innerHTML='<div class="ph">Add a screenshot at<br><code>'+src+"</code></div>"};
+    dlg.querySelectorAll(".toggle button").forEach(function(b){b.className=b.dataset.m===m?"on":""})};
+  dlg.querySelectorAll(".toggle button").forEach(function(b){b.onclick=function(){show(b.dataset.m)}});
+  $("close").onclick=function(){dlg.close()};show("desktop");dlg.showModal()}
+$("cards").addEventListener("click",function(e){var t=e.target.closest("[data-i]");if(t)open_(+t.dataset.i)});
+dlg.addEventListener("click",function(e){if(e.target===dlg)dlg.close()});
+/* contact form: opens the visitor's email app */
+$("form").addEventListener("submit",function(e){e.preventDefault();var f=e.target;
+  location.href="mailto:"+P.email+"?subject="+encodeURIComponent("Portfolio message from "+f.name.value)+"&body="+encodeURIComponent(f.message.value+"\n\nFrom: "+f.name.value+" ("+f.email.value+")")});
+</script>
+</body>
+</html>
